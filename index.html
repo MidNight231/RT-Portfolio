@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/RTPortfolioFavicon.png" />
+
+  <!-- Put your site title here -->
+  <title>
+    Rachel Thomas | Game Developer/Programmer
+  </title>
+
+  <meta name="description" content="Rachel Thomas, Game Developer, Programmer.">
+  <meta name="keywords" content="Game Developer, programmer, C#, Unity 3D" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+    <!-- ***** Header ***** -->
+
+    <header class="header" role="banner" id="top">
+        <div class="row">
+            <nav class="nav" role="navigation">
+                <ul class="nav__items">
+                    <li class="nav__item"><a href="#work" class="nav__link">Game Jam Projects</a></li>
+                    <!--<li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>-->
+                    <li class="nav__item"><a href="#personal_projects" class="nav__link">Personal Projects</a></li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__text-box row">
+            <div class="header__text">
+                <h1 class="heading-primary">
+                    <!-- Replace the following name with your name -->
+                    <span>Rachel Thomas</span>
+                </h1>
+                <!-- Put a small paragraph about yourself -->
+                <p>Game Developer based in Wales, UK</p>
+                <a href="#contact" class="btn">Get in touch</a>
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+
+        <!-- ***** Work ***** -->
+
+        <section class="work" id="work">
+            <div class="row">
+                <h2>Game Jam Projects</h2>
+                <div class="work__boxes">
+
+                    <!-- Each div with the work__box class is a project. -->
+                    <!-- GameJam 1 - Goblins & Clouds -->
+                    <div class="work_intro_box">
+                        <h3>Game Jam Projects</h3>
+                        <p>
+                            The following section features games that I have helped develop as part of a team in various game jams that I have participated in, detailing the mechanics I worked on in each project.
+                        </p>
+                    </div>
+
+                    <div class="work_description_box">
+                        <h3>Goblins &amp; Clouds - PirateSoftware Game Jam 14</h3>
+                        <h4>Game Overview</h4>                        
+                        <p>
+                            <u><b>Engine Used:</b></u> Unity Game Engine (C#)<br>
+                            <u><b>Game Jam Theme:</b></u> 'It's Spreading'.
+                        </p>
+                        <p>
+                            Goblins &amp; Clouds is an isometric wave-based combat game with a cartoon-like 3D art style where you play as a heroic goblin whose aim is to spread happiness to fellow goblins, while stopping enemy Rain Slimes from spreading sadness from goblin to goblin. You must keep fellow goblins happy and defeat all Rain Slimes to proceed through increasingly difficult waves.
+                            <br>I was the main programmer on this project and was responsible for all gameplay mechanics and AI navigation.
+                        </p>
+                        
+                    </div>
+
+                    <div class="work__box">
+                        <div class="work__text">
+                            <h3>System/Mechanics I Implemented</h3>
+                            <ul class="work__list">
+                                <li>Character Controller</li>
+                                <li>Player Upgrades</li>
+                                <li>(UPDATED) Player Attack (Sun Beam)</li>
+                                <li>(UPDATED) Spawning Systems</li>
+                                <li>Enemy AI</li>
+                                <li>Goblin 'Sad Meter' functionality</li>
+                                <li>Modular Health System</li>
+                                <li>Main Gameplay Loop</li>
+                            </ul>
+                        </div>
+                        <div class="work__image-box">
+                            <div class="slideshow__images-box">
+                                <div class="slideshow-container">
+
+                                    <div class="mySlides fade">
+                                        <img class="modal_image" src="./images/PirateJam/GoblinsCloudsImg.png" style="width:100%" alt="Goblins & Clouds Logo">
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                        <img class="modal_image" src="./images/PirateJam/SunBeamAttack.png" style="width:100%" alt="Player Goblin, Friendly Goblin, and Rain Slime">
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                        <img class="modal_image" src="./images/PirateJam/Gameplay.jpg" style="width:100%" alt="Goblins & Clouds Gameplay View">
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                        <img class="modal_image" src="./images/PirateJam/Upgrades.jpg" style="width:100%" alt="End of Round Upgrades Screen">
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                        <iframe style="width: 100%; aspect-ratio: 1.78;" src="https://www.youtube.com/embed/h5PVXjbVgRY" title="Goblins &amp; Clouds Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+
+                                    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+
+                                    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+
+                                </div>
+                                <div style="text-align:center;">
+                                    <span class="dot" onclick="currentSlide(1, 0)"></span>
+                                    <span class="dot" onclick="currentSlide(2, 0)"></span>
+                                    <span class="dot" onclick="currentSlide(3, 0)"></span>
+                                    <span class="dot" onclick="currentSlide(4, 0)"></span>
+                                    <span class="dot" onclick="currentSlide(5, 0)"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="work_description_box">
+                        <ul>
+                            <li><b>Player Attack - Sun Beam Weapon:</b> The Sun beam attack uses a <b>raycast</b>, and inflicts damage to the targeted enemy beneath the cursor.</li>
+                            <li><b>Enemy AI:</b> The enemies of the game (rain slimes) use a simple <b>state machine</b>, where slimes will react based on proximity to goblins. If a valid (happy) goblin is within radius of the slime, the slime will move towards the goblin, then when in proximity, will increase the goblin's sadness; otherwise, the slime will head towards a nearby random position and loop through again.</li>
+                            <li><b>Health System:</b> The health system is a general class that is implemented by both the Player and enemy Rain Slimes, and contains events and functions to calculate changes to health. The player was intended to have health for the introduction of the Sorrow Slime, but this enemy type is not currently implemented.</li>
+                            <li><b>Game Loop:</b> The total number of goblins and the number of enemies increment each round to increase the difficulty. As more slimes around a goblin increases the sadness faster, I set a limit of 5 slimes per goblin to control the distribution of enemies.</li>
+                            <!--<li><u><b>Updates</b></u>
+                                <ul style="margin-left: 50px; margin-right: 50px;">-->
+                                    <li><b> (UPDATE) Player Attack (Sun Beam):</b> I improved the player's weapon, allowing the beam to hit multiple enemies along the path of the laser instead of only at cursor position.</li>
+                                    <li><b> (UPDATE) Collision Detection</b> I improved the collision detection during spawning for Goblin and Rain Slimes - to prevent overlaps and AI navigation issues.</li>
+                                    <li><b> (UPDATE) Object Pooling:</b> I refactored all spawning of goblins and rain slimes to use object pooling. 
+                                            This way instead of instantiating and destroying gameobjects after each round: creating garbage for Unity's garbage collection system', 
+                                            gameobjects are disabled and re-enabled as needed. If additional gameobjects are required they can be instantiated at runtime.</li>
+                            <!--    </ul>
+                            </li>-->
+                        </ul>
+                    </div>
+
+                    <div class="work_gamejam_widget_box">
+                        <h3>Play the Game Here! </h3>
+                        <iframe frameborder="0" src="https://itch.io/embed/2486257?bg_color=000000&amp;fg_color=ffffff&amp;link_color=0055d1&amp;border_color=333333" width="75%" height="167"><a href="https://rebelwoof.itch.io/goblins-clouds">Goblins &amp; Clouds by RebelWoof, Irishmoo, Paris, MidNight321</a></iframe>
+                    </div>
+
+                    <!-- GameJam Number 2 - Pigeon & Pete -->
+
+                    <div class="work_description_box">
+                        <h3>Pigeon &amp; Pete - Brackeys Game Jam 2022.2 </h3>
+                        <h4>Game Overview</h4>
+                        <p>
+                            <u><b>Engine Used:</b></u> Unity Game Engine (C#)<br>
+                            <u><b>Game Jam Theme:</b></u> 'You're Not alone'.
+                        </p>
+                        <p>
+                            Pigeon &amp; Pete is a light-hearted puzzle platformer where you take control of both Pigeon and Pete to solve puzzles to proceed through various levels of the game.<br>
+                            Pigeon and Pete form a strong bond together after Pete's wallet was stolen by a gang of rebel pigeons - The Rebel Pigeon Gang! Pigeon discovered Pete and promised that he would help Pete reclaim his wallet!
+                            <br>In this game, Pete can navigate obstacles by running and jumping and can also destroy crates on the ground, whereas Pigeon can traverse the skies and reach narrow areas that Pete cannot. They need to work together in order to progress successfully.<br>
+                        </p>
+                    </div>
+
+                    <div class="work__box">
+                        <div class="work__text">
+                            <h3>System/Mechanics I Implemented</h3>
+                            <ul class="work__list">
+                                <li>Character Controllers (Pigeon and Pete)</li>
+                                <li>Health System</li>
+                                <li>Character Animation (Unity Animator)</li>
+                                <li>Introductory Cutscene (Unity Timeline)</li>
+                            </ul>
+                        </div>
+                        <div class="work__image-box">
+                            <div class="slideshow__images-box">
+                                <div class="slideshow-container">
+
+                                    <div class="mySlides fade">
+                                        <img class="modal_image" src="./images/PigeonAndPete/Pigeon&PeteLogo.png" style="width:100%" alt="Pigeon & Pete Logo">
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                        <img class="modal_image" src="./images/PigeonAndPete/P&PGameplay1.jpg" style="width:100%" alt="Pigeon & Pete in-game screenshot">
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                        <img class="modal_image" src="./images/PigeonAndPete/P&PGameplay2.jpg" style="width:100%" alt="Pigeon in-game screenshot">
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                        <iframe style="width: 100%; aspect-ratio: 1.78;" src="https://www.youtube.com/embed/6OhqJN-ZYu8" title="Pigeon &amp; Pete Intro Cinematic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                        <iframe style="width: 100%; aspect-ratio: 1.78;" src="https://www.youtube.com/embed/zzCuw_y9j60" title="Pigeon &amp; Pete Gameplay Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+
+                                    <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+
+                                    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+
+                                </div>
+                                <div style="text-align:center;">
+                                    <span class="dot" onclick="currentSlide(1, 1)"></span>
+                                    <span class="dot" onclick="currentSlide(2, 1)"></span>
+                                    <span class="dot" onclick="currentSlide(3, 1)"></span>
+                                    <span class="dot" onclick="currentSlide(4, 1)"></span>
+                                    <span class="dot" onclick="currentSlide(5, 1)"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="work_description_box">
+                        <ul>
+                            <li><b>Character Controllers:</b> I developed Character controllers for both Pigeon &amp; Pete as each are controlled differently and have different actions. A button (right-click) is used to toggle between control schemes: Pete has standard left/right movement and jump, whereas Pigeon allows movement in all four directions (up/down/left/right) and also has their poop action which is used to activate buttons to progress.
+                                <br>When the player switches to controlling Pete, Pigeon will automatically follow at an offset behind him.</li>
+                            <li><b>Health System:</b> The health system in Pigeon &amp; Pete is a simple life-based system using triggers to detect collisions with enemy projectiles (enemy pigeon poop). Lives decrease by one every time Pete is hit, and a simple sprite change indicates how many lives remain.</li>
+                            <li><b>Animations:</b> Using Unity's Animation system, animation states for both controllable characters are triggered based on their movement velocity.</li>
+                            <li><b>Timeline - Cutscene:</b> I created the introductory cutscene using Unity's Timeline sequencer. I set up muiltiple camera angles, animations, and sounds effects, then set up transitions between them to effectively provide the overall narrative and objective for the game.</li>
+                        </ul>
+                    </div>
+
+                    <div class="work_gamejam_widget_box">
+                        <h3>Play the Game Here! </h3>
+                        <iframe frameborder="0" src="https://itch.io/embed/1677192?bg_color=000000&amp;fg_color=ffffff&amp;link_color=0055d1&amp;border_color=333333" width="75%" height="167"><a href="https://moholty.itch.io/pigeon-and-pete">Pigeon &amp; Pete by Lewis Moholt, Rachel Thomas, Joseph Morgan, Matthew Watson</a></iframe>
+                    </div>
+
+
+                    <!-- GameJam Number 3 - Neo-Runner -->
+                    
+                    <div class="work_description_box">
+                        <h3>Neo-Runner - Transfuzer Employment Pathway Game Jam 2021</h3>
+                        <h4>Game Overview</h4>
+                        <p>
+                            <u><b>Engine Used:</b></u> Unity Game Engine (C#)<br>
+                            <u><b>Game Jam Theme:</b></u> 'Showcase Your Skills'.</p>
+                        <p>
+                            Neo-runner is fast-paced, 3D first-person platforming game. With only a single life, you must run, wallrun, jump, grapple, and shoot your way through uniquely designed levels.
+                            Neo-Runner provides a very challenging experience, with a standalone speed running mode to truly test your skills.
+                        </p>
+                    </div>
+
+                    <div class="work__box">
+                        <div class="work__text">
+                            <h3>System/Mechanics I Implemented</h3>
+                            <ul class="work__list">
+                                <li>Shooting (Laser Gun)</li>
+                                <li>Ammunition + Pickups</li>
+                                <li>Destructible Objects</li>
+                                <li>Level Design: Floor 6</li>
+                                <li>(UPDATE) Gamepad Support</li>
+                                <li>(UPDATE) Grappling Aim-Assist</li>
+                                <li>(UPDATE) Checkpoint System</li>
+                            </ul>
+                        </div>
+                        <div class="work__image-box">
+                            <div class="slideshow__images-box">
+                                <div class="slideshow-container">
+
+                                    <div class="mySlides fade">
+                                        <img class="modal_image" src="./images/NeoRunner/NeoRunnerLogo.jpg" style="width:100%" alt="Neo-Runner Logo">
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                        <img class="modal_image" src="./images/NeoRunner/NeoRunnerShooting.jpg" style="width:100%" alt="Neo-Runner Shooting">
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                        <img class="modal_image" src="./images/NeoRunner/NeoRunnerWallrunning.jpg" style="width:100%" alt="Neo-Runner Wallrunning">
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                        <img class="modal_image" src="./images/NeoRunner/NeoRunnerGrappling.jpg" style="width:100%" alt="Neo-Runner Grappling">
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                        <iframe style="width: 100%; aspect-ratio: 1.78;" src="https://www.youtube.com/embed/ACVpNWEETNo" title="Neo-Runner Gameplay Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+
+                                    <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+
+                                    <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+
+                                </div>
+                                <div style="text-align:center;">
+                                    <span class="dot" onclick="currentSlide(1, 2)"></span>
+                                    <span class="dot" onclick="currentSlide(2, 2)"></span>
+                                    <span class="dot" onclick="currentSlide(3, 2)"></span>
+                                    <span class="dot" onclick="currentSlide(4, 2)"></span>
+                                    <span class="dot" onclick="currentSlide(5, 2)"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="work_description_box">
+                        <ul>
+                            <li><b>Shooting:</b> Neo-runner was designed to only have a single weapon - a laser gun, and this is used throughout the whole game from floor 2/level 2. It uses a raycast to detect hits on enemies, has a set fire rate, clip size, and ammunition capacity.</li>
+                            <li><b>Ammunition:</b> Ammunition for the laser gun can be found as in-game pickups on the ground, triggered when the player collides with the object. Ammo pickups only provide the player a set amount of ammo, and only up to the limit of the weapon’s ammo capacity.</li>
+                            <li><b>(UPDATE) Gamepad Support:</b> Following the game jam, I decided the add some features including gamepad support for every action: 
+                                movement, aim, jump, shoot, and grappling, using Unity’s Input System. I used Mirror’s Edge as an example of well-designed 
+                                gamepad configuration for a free running-type game, mapping ‘jump’ to a shoulder button so it doesn't affect the ability to move and aim at the same time.
+                            </li>
+                            <li><b>(UPDATE) Grappling Aim-Assist:</b> Grappling using a gamepad could be difficult sometimes, so I also added an aim-assist feature for this.
+                                I created a ‘buffer zone’ around each grappling hook that allows players a margin of error on grapple attempts: increasing the chances of a successful grapple when the player aims in its direction. 
+                                To aid this further, a visual indicator appears when aiming to show where the grapple connects.
+                            </li>
+                            <li><b>(UPDATE) Checkpoint System: </b> The game's essence is to provide a challenge by giving the player only one life to complete each level. This can be frustrating for some players, 
+                                so I have since implemented an optional checkpoint system, checkpoints are triggered when the player enters checkpoint zones placed before and after various obstacles. 
+                                If the player dies, they are re-positioned at the last checkpoint they entered.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="work_gamejam_widget_box">
+                        <h3>Play the Game Here! </h3>
+                        <iframe frameborder="0" src="https://itch.io/embed/1110420?bg_color=000000&amp;fg_color=ffffff&amp;link_color=0055d1&amp;border_color=333333" width="75%" height="167"><a href="https://crithit.itch.io/neo-runner">Neo-Runner by Lewis Moholt, Rachel Thomas, Joseph Morgan, Joshua Price, Barbara Lo Giudice, Noah Curtis</a></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--Personal Projects-->
+
+        <section class="personal_projects" id="personal_projects">
+            <div class="row">
+                <h2>Personal Projects</h2>
+                <div class="work_description_box">
+                    <p>
+                        The following section contains personal projects that I'm currently working on (WIP), which are inspired by some of the systems and game mechanics that I've come across while playing some of my favourite games.
+                    </p>
+                </div>
+
+                <div class="work__box">
+                    <div class="personal_work__text">
+                        <h3>Interaction System</h3>
+                        <div class="work_description_box">
+                            <p>
+                                Inspired by games like Life is Strange, where objects in the environment offer great storytelling, and opportunities for the player to discover secrets,
+                                I am currently developing an interaction system, where several types of objects in the environment can be interacted with by the player.<br><br>
+                                To emulate this, I created a general interaction system using an Interface, which many types of objects can implement to trigger unique actions depending on their requirements:
+                                to trigger object inspections in scene, for opening doors, drawers, or turning on lights.
+                            </p>
+                            <p>
+                                Expanding on this, I plan to add descriptive UI text and additional interactivity when inspecting objects in the environment.                            
+                            </p>
+                        </div>
+                    </div>
+                    <div class="work__image-box">
+                        <video playsinline autoplay loop muted width="100%" src="./images/InteractionVid/InteractionDemo.mp4">
+                            Interacting with light switches, drawers, doors, and scene objects.
+                        </video>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+
+        </section>
+        <!-- ***** About ***** -->
+
+        <section class="about" id="about">
+            <div class="row">
+                <h2>About Me</h2>
+                <div class="about__content">
+                    <div class="about__text">
+                        <p>
+                            Ever since getting my first console and playing my first game, which was Rayman on PlayStation 1, I have loved everything about gaming.
+                            Gaming was the catalyst to pursuing an education and ultimately a career in game development. I wanted to learn how the game mechanics I encountered in the games I played were made, and to be able to create them myself.
+                            I love to learn, and I'm constantly learning new programming concepts and techniques to create better, more efficient code.
+                            <br><br>Outside of gaming and game development I like to keep myself active by going to the gym and playing team sports like football.
+                            <br><br>To see more about my education and work experience please view my one-page CV by clicking the button below.
+                        </p>
+                        <!-- link to cv/resume -->
+                        <a href="./pdf/Rachel_Thomas_CV_2024.pdf" target="_blank" title="Open CV in new tab" class="btn">My CV</a>
+                    </div>
+
+                    <div class="about__photo-container">
+                        <img class="about__photo" src="./images/ProfilePicture.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ***** Contact ***** -->
+
+    <section class="contact" id="contact">
+        <div class="row">
+            <h2>Get in Touch</h2>
+            <div class="contact__info">
+                <p>
+                    Feel free to contact me anytime to discuss work opportunities or if you have any advice to give to me, and I will do my best to respond as promptly as possible! I can be contacted via Email and LinkedIn (links below).
+                    <br><br>The quickest way to reach out to me is via email 😊
+                </p>
+                <a href="mailto:rthomas-91@hotmail.co.uk" class="btn">rthomas-91@hotmail.co.uk</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ***** Footer ***** -->
+
+    <footer role="contentinfo" class="footer">
+        <div class="row">
+            <!-- Update the links to point to your accounts -->
+            <ul class="footer__social-links">
+                <!--<li class="footer__social-link-item">
+                    <a href="" title="Link to Github Profile">
+                        <img src="./images/github.svg" class="footer__social-image" alt="Github">
+                    </a>
+                </li>-->
+                <li class="footer__social-link-item">
+                    <a href="https://www.linkedin.com/in/rachel-a-thomas/">
+                        <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+                    </a>
+                </li>
+            </ul>
+
+            <p>
+                This portfolio design was adapted from a template developed by:
+                &copy; 2020 <a href="https://nisar.dev" class="link">Nisar</a>
+            </p>
+            <!--<div class="footer__github-buttons">
+                <iframe src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
+                        frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
+                </iframe>
+            </div>-->
+            <p style="font-size:small">
+                Header background image credit:
+                <a href="https://www.vecteezy.com/vector-art/1987697-abstract-hexagon-pattern-dark-blue-background-medical-and-science-concept-molecular-structures" class="link">Abstract hexagon pattern dark blue background. Vectors by Vecteezy</a>
+            </p>
+        </div>
+    </footer>
+
+    <a href="#top" class="back-to-top" title="Back to Top">
+        <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image" />
+    </a>
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
